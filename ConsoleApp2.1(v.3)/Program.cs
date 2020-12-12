@@ -35,13 +35,17 @@ namespace ConsoleApp2._1_v._3_
                 double salary = double.Parse(Console.ReadLine());
                 Console.WriteLine ("Введите стаж: ");
                 int seniority = int.Parse(Console.ReadLine());
-                if (seniority > 10)
+                if (seniority > 5 & seniority < 10)
+                {
+                    salary += salary * s;
+                }
+                else if (seniority > 10 & seniority < 20)
                 {
                     salary += salary * p;
                 }
                 else
                 {
-                    salary += salary * s;
+                    salary = salary;
                 }
                 Console.WriteLine($"Зарплата с надбавкой составляет: {salary}");
                 Console.ReadKey();
