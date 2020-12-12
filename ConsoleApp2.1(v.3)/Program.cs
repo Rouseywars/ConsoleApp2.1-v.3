@@ -35,11 +35,11 @@ namespace ConsoleApp2._1_v._3_
                 double salary = double.Parse(Console.ReadLine());
                 Console.WriteLine ("Введите стаж: ");
                 int seniority = int.Parse(Console.ReadLine());
-                if (seniority > 5 & seniority < 10)
+                if (seniority > 4 & seniority < 11) //от 5 до 10
                 {
                     salary += salary * s;
                 }
-                else if (seniority > 10 & seniority < 20)
+                else if (seniority > 10 & seniority < 21) //от 10 до 20
                 {
                     salary += salary * p;
                 }
