@@ -27,7 +27,6 @@ namespace ConsoleApp2._1_v._3_
     class Program //Средний уровень
     {
         static double s = 0.02d, p = 0.10d; //надбавка
-        //static int m = 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20; //стаж
         static void Main(string[] args)
         {
             try
