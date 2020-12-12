@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp2._1_v._3_
+/*
 {
     class Program //Базовый уровень
 
@@ -21,24 +22,28 @@ namespace ConsoleApp2._1_v._3_
         }
     }
 }
-/*
+*/
 {
     class Program //Средний уровень
     {
-        static double s = 0.02, p = 0.10; //надбавка
-        static double m = 5 & 6 & 7 & 8 & 9 & 10, n = 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20; //стаж
+        static double s = 0.02d, p = 0.10d; //надбавка
+        //static int m = 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20; //стаж
         static void Main(string[] args)
         {
             try
                 {
-                Console.Write("Введите зарплату: ");
+                Console.WriteLine ("Введите зарплату: ");
                 double salary = double.Parse(Console.ReadLine());
-                Console.Write("Введите стаж: ");
-                double seniority = double.Parse(Console.ReadLine());
-                if (seniority >= m)
-                    salary += salary * s;
-                else if (seniority >= n)
+                Console.WriteLine ("Введите стаж: ");
+                int seniority = int.Parse(Console.ReadLine());
+                if (seniority > 10)
+                {
                     salary += salary * p;
+                }
+                else
+                {
+                    salary += salary * s;
+                }
                 Console.WriteLine($"Зарплата с надбавкой составляет: {salary}");
                 Console.ReadKey();
                 }
@@ -49,4 +54,3 @@ namespace ConsoleApp2._1_v._3_
         }
     }
 }
-*/
